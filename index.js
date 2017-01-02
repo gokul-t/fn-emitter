@@ -11,18 +11,22 @@
     }
 }(typeof window !== "undefined" ? window : this, function() {
 
-    var Emitter = function(self, opts) {
+    var Emitter = function(fn, opts) {
+        if(!fn || !typeof fn === "object"){
+            console.error("first argument must need to be an object.");
+            return;
+        }
         var regEvents = {};
-        self.on = function(evName, cb) {
+        fn.on = function(evName, cb) {
             if (regEvents[evName]) {
                 regEvents[evName].push(cb);
             } else {
                 regEvents[evName] = [cb];
             }
-            return self;
+            return fn;
         };
         
-        self.off = function(evName, cb) {
+        fn.off = function(evName, cb) {
             if (cb && regEvents[evName]) {
                 var index = regEvents[evName].indexOf(cb);
                 if (index !== -1) {
@@ -31,10 +35,10 @@
             } else {
                 regEvents[evName] = [];
             }
-            return self;
+            return fn;
         };
 
-        self.emit = function() {
+        fn.emit = function() {
             var regEvent = regEvents[arguments[0]];
             var args = Array.prototype.slice.call(arguments, 1);
             if (regEvent) {

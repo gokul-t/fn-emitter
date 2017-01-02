@@ -1,95 +1,25 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "fn-emitter",
-        "scope": null,
-        "escapedName": "fn-emitter",
-        "name": "fn-emitter",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
-      },
-      "/home/toobler/Projects/websitebuilder"
-    ],
-    [
-      {
-        "raw": "fn-emitter@^1.0.0",
-        "scope": null,
-        "escapedName": "fn-emitter",
-        "name": "fn-emitter",
-        "rawSpec": "^1.0.0",
-        "spec": ">=1.0.0 <2.0.0",
-        "type": "range"
-      },
-      "/home/toobler/Projects/websitebuilder"
-    ],
-    [
-      "fn-emitter",
-      "/home/gokult/Projects"
-    ]
-  ],
-  "_from": "fn-emitter@latest",
-  "_id": "fn-emitter@2.0.0",
-  "_inCache": true,
-  "_installable": true,
-  "_location": "/fn-emitter",
-  "_nodeVersion": "6.9.2",
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/fn-emitter-2.0.0.tgz_1483346486638_0.8382042734883726"
-  },
-  "_npmUser": {
-    "email": "gokultmail@gmail.com",
-    "name": "gokult"
-  },
-  "_npmVersion": "3.10.9",
-  "_phantomChildren": {},
-  "_requested": {
-    "name": "fn-emitter",
-    "raw": "fn-emitter",
-    "rawSpec": "",
-    "scope": null,
-    "spec": "latest",
-    "type": "tag"
-  },
-  "_requiredBy": [
-    "#USER"
-  ],
-  "_shrinkwrap": null,
-  "_spec": "fn-emitter",
-  "_where": "/home/gokult/Projects",
-  "author": {
-    "email": "gokultmail@gmail.com",
-    "name": "Gokul T"
-  },
-  "dependencies": {},
+  "name": "fn-emitter",
+  "version": "2.0.0",
   "description": "extend your function with an event emitter.",
-  "devDependencies": {},
-  "directories": {},
-  "dist": {
-    "shasum": "6794c171804c606d6cf40d1dac49c2656a6cd098",
-    "tarball": "https://registry.npmjs.org/fn-emitter/-/fn-emitter-2.0.0.tgz"
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gokul-toobler/fn-emitter.git"
+  },
+  "scripts": {
+    "test": "mocha"
   },
   "keywords": [
-    "emit",
-    "emitter",
     "events",
+    "emitter",
+    "emit",
     "on"
   ],
-  "license": "ISC",
-  "main": "index.js",
-  "maintainers": [
-    {
-      "name": "gokult",
-      "email": "gokultmail@gmail.com"
-    }
-  ],
-  "name": "fn-emitter",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "2.0.0"
+  "author": "Gokul T <gokultmail@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
 }
