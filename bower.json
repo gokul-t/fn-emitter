@@ -1,0 +1,23 @@
+{
+  "name": "fn-emitter",
+  "description": "extend your function with an event emitter.",
+  "main": "index.js",
+  "authors": [
+    "Gokul T <gokultmail@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "events",
+    "emitter",
+    "emit",
+    "on"
+  ],
+  "homepage": "https://github.com/gokul-toobler/fn-emitter",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
