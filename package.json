@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gokul-toobler/fn-emitter.git"
+    "url": "https://github.com/gokul-t/fn-emitter.git"
   },
   "scripts": {
     "test": "mocha"

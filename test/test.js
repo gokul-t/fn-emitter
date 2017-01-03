@@ -1,10 +1,7 @@
-var assert = require('assert');
+var assert = require('chai').assert;
 var Emitter = require("./../index");
 describe('Emitter', function() {
     var fn;
-    it('should return function when the emitter is loaded', function() {
-        assert.equal("function", typeof Emitter);
-    });
     before(function() {
         fn = function() {};
     })
@@ -15,15 +12,23 @@ describe('Emitter', function() {
             assert.equal("function", typeof fn.off);
             assert.equal("function", typeof fn.emit);
         });
-        it('should envoke on cb with same emit value', function() {
-            fn.on("demo", function(v1,v2,v3) {
-                assert.equal(1, v1);
-                assert.equal(2, v2);
-                assert.equal(3, v3);
+        it('should envoke on cb with same emit values', function() {
+            fn.on("demo1", function(v1, v2, v3) {
+                assert.equal(5, v1);
+                assert.equal(6, v2);
+                assert.equal(7, v3);
             });
             for (var i = 0; i < 3; i++) {
-                fn.emit("demo", 1,2,3);
+                fn.emit("demo1", 5, 6, 7);
             }
+        })
+        it('should not envoke cb', function() {
+            var expect = function(v1, v2, v3) {
+                assert.equal(1, 2);
+            };
+            fn.on("demo", expect);
+            fn.off("demo", expect);
+            fn.emit("demo", 1, 2, 3);
         })
     });
 });
