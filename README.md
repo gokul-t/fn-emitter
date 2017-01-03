@@ -26,28 +26,28 @@ var cb = function(msg){
 	console.log(msg);
 };
 
-#register an event listener
+###register an event listener
 
 demo.on("test",cb);
 
-#emit an event
+###emit an event
 
 demo.emit("test","successfully emitted and recieved");
 
-#remove the event listener
+###remove the event listener
 
 demo.off("test",cb)
 
 
 ## api
 
-# on : register an event listener
+### on : register an event listener
 .on("event name",callback)
 
-#emit : emit an event.
+###emit : emit an event.
 .emit("event name",params...)
 
-#off : unregister an event listener or all listeners for an event
+###off : unregister an event listener or all listeners for an event
 .off("event name",[cb])
 .off("event name") - if 2nd parameter is not specified then all listeners for the specific event is unregistered.
 
