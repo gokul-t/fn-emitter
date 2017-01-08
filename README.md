@@ -51,6 +51,8 @@ demo.off("test",cb)
 .off("event name",[cb])
 .off("event name") - if 2nd parameter is not specified then all listeners for the specific event is unregistered.
 
+demo at https://runkit.com/586a7335e32a6d00155783d4/586bf0754fcd4e0014699586
+
 ## License
 
 MIT &copy; 2016 contributors
