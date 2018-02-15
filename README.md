@@ -24,15 +24,15 @@ var cb = function(msg){
 	console.log(msg);
 };
 
-###register an event listener
+**register an event listener**
 
 demo.on("test",cb);
 
-###emit an event
+**emit an event**
 
 demo.emit("test","successfully emitted and recieved");
 
-###remove the event listener
+**remove the event listener**
 
 demo.off("test",cb)
 
