@@ -1,6 +1,6 @@
 {
   "name": "fn-emitter",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "extend your function with an event emitter.",
   "main": "index.js",
   "repository": {
