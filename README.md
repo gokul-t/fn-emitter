@@ -1,8 +1,6 @@
 
-<h1>
-  fn-emitter
-</h1>
-
+fn-emitter
+==========
 
 Extend your function with an event emitter.
 
@@ -41,13 +39,13 @@ demo.off("test",cb)
 
 ## api
 
-### on : register an event listener
+**on** : register an event listener
 .on("event name",callback)
 
-###emit : emit an event.
+**emit** : emit an event.
 .emit("event name",params...)
 
-###off : unregister an event listener or all listeners for an event
+**off** : unregister an event listener or all listeners for an event
 .off("event name",[cb])
 .off("event name") - if 2nd parameter is not specified then all listeners for the specific event is unregistered.
 
